@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Bookshelf App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that allows users to search for books using the Open Library API and maintain a personal bookshelf in the browser using localStorage. Users can search for books, view search results, add books to their personal bookshelf, and view their bookshelf.
 
-## Available Scripts
+[Live Demo](https://mybookshelfi.netlify.app/)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Book Search:** Search for books in real-time using the Open Library API.
+- **Add to Bookshelf:** Add books from search results to a personal bookshelf.
+- **Persistent Storage:** The bookshelf is stored in the browser's localStorage, so it persists across sessions.
+- **Responsive Design:** The application is responsive and works well on different screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React:** Frontend library for building user interfaces.
+- **Axios:** Promise-based HTTP client for making API requests.
+- **CSS:** Styling the components.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js**: Make sure you have Node.js installed. You can download it from [here](https://nodejs.org/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/yourusername/bookshelf-app.git
+   cd bookshelf-app
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install the dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+   This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src/`
+  - `components/`
+    - `BookCard.js`: Component for displaying individual book cards in search results and bookshelf.
+    - `BookSearch.js`: Component for searching books and displaying search results.
+    - `Bookshelf.js`: Component for displaying the user's bookshelf.
+  - `App.js`: Main application component containing the router.
+  - `index.js`: Entry point of the application.
+  - `App.css`: Global styles for the application.
+  - `BookSearch.css`: Styles for the book search component.
+  - `Bookshelf.css`: Styles for the bookshelf component.
+  - `BookCard.css`: Styles for the book card component.
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Search for Books:** Enter the name of the book in the search input field. The results will be displayed in real-time as you type.
+2. **Add to Bookshelf:** Click on the "Add to Bookshelf" button on the book cards to add books to your personal bookshelf.
+3. **View Bookshelf:** Click on the "Go to My Bookshelf" link to view the books you have added to your bookshelf.
 
-### Analyzing the Bundle Size
+## API Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application uses the [Open Library API](https://openlibrary.org/developers/api) to fetch book data. The search query is made to the following endpoint:
 
-### Making a Progressive Web App
+```
+https://openlibrary.org/search.json?q=YOUR_QUERY&limit=10&page=1
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Query Parameters
 
-### Advanced Configuration
+- `q`: Name of the book.
+- `limit`: Set to 10 results per page.
+- `page`: Only display results from page 1.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots
+### Home Page
 
-### Deployment
+![Home Page]([path-to-your-screenshot](https://ibb.co/R9K6FPt))
+### Search Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Search Page]([[path-to-your-screenshot](https://ibb.co/LkC8F0R)]
 
-### `npm run build` fails to minify
+### Bookshelf Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Bookshelf Page]([path-to-your-screenshot](https://ibb.co/kq6CGr0))
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Open Library](https://openlibrary.org/) for providing the book data API.
+
+---
+
+Feel free to contribute to the project by submitting issues or pull requests. If you have any questions or suggestions, please open an issue.
+
+---
+
+Developed with ❤️ by [Harshavardhan Govindu](https://github.com/ghv061101)
