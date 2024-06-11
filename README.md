@@ -86,11 +86,11 @@ https://openlibrary.org/search.json?q=YOUR_QUERY&limit=10&page=1
 
 ### Search Page
 
-![Search Page]([[path-to-your-screenshot](/no5.PNG)]
+![Search Page]([(/no5.PNG)])
 
 ### Bookshelf Page
 
-![Bookshelf Page]([path-to-your-screenshot](/no7.PNG))
+![Bookshelf Page]([(/no7.PNG)])
 
 ## License
 
