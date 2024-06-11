@@ -83,16 +83,14 @@ https://openlibrary.org/search.json?q=YOUR_QUERY&limit=10&page=1
 - `page`: Only display results from page 1.
 
 ## Screenshots
-### Home Page
 
-![Home Page]([path-to-your-screenshot](https://ibb.co/R9K6FPt))
 ### Search Page
 
-![Search Page]([[path-to-your-screenshot](/no5.png)]
+![Search Page]([[path-to-your-screenshot](/no5.PNG)]
 
 ### Bookshelf Page
 
-![Bookshelf Page]([path-to-your-screenshot](https://ibb.co/kq6CGr0))
+![Bookshelf Page]([path-to-your-screenshot](/no7.PNG))
 
 ## License
 
@@ -101,11 +99,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - [Open Library](https://openlibrary.org/) for providing the book data API.
-
----
-
-Feel free to contribute to the project by submitting issues or pull requests. If you have any questions or suggestions, please open an issue.
-
----
 
 Developed with ❤️ by [Harshavardhan Govindu](https://github.com/ghv061101)
