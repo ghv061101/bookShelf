@@ -88,7 +88,7 @@ https://openlibrary.org/search.json?q=YOUR_QUERY&limit=10&page=1
 ![Home Page]([path-to-your-screenshot](https://ibb.co/R9K6FPt))
 ### Search Page
 
-![Search Page]([[path-to-your-screenshot](https://github.com/ghv061101/bookShelf/blob/master/no5.PNG)]
+![Search Page]([[path-to-your-screenshot](/no5.png)]
 
 ### Bookshelf Page
 
