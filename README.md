@@ -85,7 +85,7 @@ https://openlibrary.org/search.json?q=YOUR_QUERY&limit=10&page=1
 ## Screenshots
 ### Home Page
 
-![Home Page](/no2.PNG)
+![Home Page](/no1.PNG)
 ### Search Page
 
 ![Search Page](/no5.PNG)
